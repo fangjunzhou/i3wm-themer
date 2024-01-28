@@ -51,8 +51,8 @@ cp defaults/config.yaml .
 sed -i -e "s/USER/$USER/g" config.yaml
 
 # Backup
-mkdir "$HOME"/Backup
-python3 i3wm-themer.py --config config.yaml --backup "$HOME"/Backup
+mkdir "$HOME"/backup
+python3 i3wm-themer.py --config config.yaml --backup "$HOME"/backup
 
 # Configure and set theme to 000
 cp -r scripts/* /home/"$USER"/.config/polybar/

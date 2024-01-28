@@ -1,0 +1,5 @@
+i3-config: /home/fangjun/.config/i3/config
+polybar-config: /home/fangjun/.config/polybar/config
+xresources: /home/fangjun/.Xresources
+nitrogen-config: /home/fangjun/.config/nitrogen/bg-saved.cfg
+wallpaper-path: /home/fangjun/.config/nitrogen/
