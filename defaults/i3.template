@@ -220,6 +220,9 @@ exec_always --no-startup-id $HOME/.config/polybar/i3wmthemer_bar_launch.sh
 exec --no-startup-id xrandr --output DP-3 --auto --left-of DP-0
 exec --no-startup-id xrandr --output HDMI-1 --auto --right-of DP-0
 
+# Start picom
+exec --no-startup-id picom
+
 # Theme colors
 client.focused          #272827 #272827 #657b83 #272827 #272827
 client.focused_inactive #272827 #272827 #657b83 #272827 #272827
