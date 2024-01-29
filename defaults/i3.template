@@ -234,7 +234,7 @@ client.background       #272827
 
 # Gaps
 gaps inner 10
-gaps outer -4
+gaps outer 0
 
 smart_gaps on
 
