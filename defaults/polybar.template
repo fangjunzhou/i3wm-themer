@@ -88,7 +88,7 @@ ramp-signal-foreground = #272827
 
 [module/eth]
 type = internal/network
-interface = enp0s3
+interface = enp3s0
 interval = 3.0
 
 format-connected-padding = 2
@@ -152,6 +152,33 @@ menu-3-0 = log off
 menu-3-0-exec = i3 exit logout
 menu-3-1 = cancel
 menu-3-1-exec = menu-open-0
+
+[module/tray]
+type = internal/tray
+
+format-margin = 8px
+tray-spacing = 8px
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+; If not, uses default sink
+; sink = alsa_output.pci-0000_12_00.3.analog-stereo
+
+; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+; Default: true
+use-ui-max = true
+
+; Interval for volume increase/decrease (in percent points)
+; Default: 5
+interval = 5
+
+; Reverses the increment/decrement on scroll event. Set this to true if you are
+; using natural scrolling option on your touchpad.
+; New in version 3.7.0
+; Default: false
+reverse-scroll = false
 
 [settings]
 screenchange-reload = true
